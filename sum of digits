@@ -1,0 +1,14 @@
+#include <stdio.h>  
+int total(int n) 
+{ 
+    if (n == 0) 
+       return 0; 
+    return (n % 10 + total(n / 10)); 
+} 
+int main() 
+{ 
+    int num = 454545; 
+    int result = total(num); 
+    printf("total in %d is %d\n", num, result); 
+    return 0; 
+} 
